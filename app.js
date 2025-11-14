@@ -4,7 +4,7 @@ import chatCompletion from "./openai.js"
 const app = express()
 
 app.use(express.json())
-app.use(express.static('.'))
+app.use(express.static('public'))
 
 app.post('/userInput', async (req, res)=> {
     console.log("POST request on /userInput")
